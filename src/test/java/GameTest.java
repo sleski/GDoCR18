@@ -3,9 +3,9 @@ import org.junit.Test;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.notNullValue;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 /**
  * Created by Slawomir Leski on 17-11-2018.
@@ -25,5 +25,6 @@ public class GameTest {
 	@Test
 	public void shouldGameBeInit() throws Exception {
 		assertThat(edgeSize, is(notNullValue()));
+		assertThat(game, is(notNullValue()));
 	}
 }
