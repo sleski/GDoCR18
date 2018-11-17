@@ -27,4 +27,9 @@ public class GameTest {
 		assertThat(edgeSize, is(notNullValue()));
 		assertThat(game, is(notNullValue()));
 	}
+
+	@Test
+	public void shouldCheckNumbersOfElements() throws Exception {
+		assertThat(game.getFields(), is(edgeSize * edgeSize));
+	}
 }

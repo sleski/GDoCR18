@@ -8,4 +8,8 @@ public class Game {
 	public Game(int edgeSize){
 		this.edgeSize = edgeSize;
 	}
+
+	public int getFields(){
+		return edgeSize * edgeSize;
+	}
 }
