@@ -30,6 +30,6 @@ public class GameTest {
 
 	@Test
 	public void shouldCheckNumbersOfElements() throws Exception {
-		assertThat(game.getFields(), is(edgeSize * edgeSize));
+		assertThat(game.getFields().length, is(edgeSize * edgeSize));
 	}
 }
